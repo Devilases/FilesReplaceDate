@@ -16,7 +16,7 @@ public class FilesReplaceDate {
     public void replaceString(File[] files){
 
         for (File file: files) {
-            Pattern pattern = Pattern.compile("\s(0?[1-9]|[12][0-9]|3[01])[/|-](0?[1-9]|1[0-2])[/|-][0-9]{4}\s([01]?[0-9]|2[0-3]):[0-5][0-9]");
+            Pattern pattern = Pattern.compile("(0?[1-9]|[12][0-9]|3[01])[/|-](0?[1-9]|1[0-2])[/|-][0-9]{4}\s([01]?[0-9]|2[0-3]):[0-5][0-9]");
 
             try {
                 BufferedReader reader = new BufferedReader(new FileReader(file));
